@@ -36,7 +36,7 @@ const CustomerComponent = () => {
       console.log('Fetching products...'); // Debug log
       console.log('Token:', token); // Debug log
       
-      const response = await axios.get('http://localhost:5000/api/customer/products', {
+      const response = await axios.get('https://customerservicefeedback.onrender.com/api/customer/products', {
         headers: { Authorization: `Bearer ${token}` }
       });
       
@@ -59,7 +59,7 @@ const CustomerComponent = () => {
 
   const fetchFeedbackHistory = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/customer/feedback', {
+      const response = await axios.get('https://customerservicefeedback.onrender.com/api/customer/feedback', {
         headers: { Authorization: `Bearer ${token}` }
       });
       setFeedbackHistory(response.data);
@@ -87,7 +87,7 @@ const CustomerComponent = () => {
 
     try {
       const response = await axios.post(
-        'http://localhost:5000/api/customer/feedback', 
+        'https://customerservicefeedback.onrender.com/api/customer/feedback', 
         feedbackData, // This is the data (2nd parameter)
         {             // This is the config (3rd parameter)
           headers: { 

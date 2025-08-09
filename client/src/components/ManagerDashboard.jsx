@@ -22,7 +22,7 @@ const ManagerComponent = () => {
     const fetchFeedbacks = async () => {
       try {
         const res = await axios.get(
-          'http://localhost:5000/api/manager/feedback',
+          'https://customerservicefeedback.onrender.com/api/manager/feedback',
           { headers: { Authorization: `Bearer ${token}` } }
         );
         setFeedbacks(res.data);
@@ -52,7 +52,7 @@ const ManagerComponent = () => {
   const updateStatus = async (id, newStatus) => {
     try {
       await axios.patch(
-        `http://localhost:5000/api/manager/feedback/${id}/status`,
+        `https://customerservicefeedback.onrender.com/api/manager/feedback/${id}/status`,
         { status: newStatus },
         { headers: { Authorization: `Bearer ${token}` } }
       );
