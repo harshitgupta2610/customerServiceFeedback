@@ -1,0 +1,229 @@
+/* customer.css */
+.customer-dashboard {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.tab-navigation {
+  display: flex;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #e1e5e9;
+}
+
+.tab {
+  padding: 12px 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  color: #666;
+  border-bottom: 3px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.tab.active {
+  color: #007bff;
+  border-bottom-color: #007bff;
+}
+
+.tab:hover {
+  color: #007bff;
+  background-color: #f8f9fa;
+}
+
+.feedback-form-section,
+.feedback-history-section {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-form-section h2,
+.feedback-history-section h2 {
+  margin-bottom: 25px;
+  color: #333;
+  text-align: center;
+}
+
+.feedback-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #333;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #e1e5e9;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+  font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.form-group textarea {
+  resize: vertical;
+  font-family: inherit;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 15px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover:not(:disabled) {
+  background: #0056b3;
+}
+
+.submit-btn:disabled {
+  background: #6c757d;
+  cursor: not-allowed;
+}
+
+.no-feedback {
+  text-align: center;
+  padding: 40px;
+  color: #666;
+}
+
+.switch-tab-btn {
+  padding: 10px 20px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.feedback-list {
+  space-y: 20px;
+}
+
+.feedback-item {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  border-left: 4px solid #007bff;
+}
+
+.feedback-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.rating {
+  font-weight: 600;
+  color: #333;
+}
+
+.date {
+  color: #666;
+  font-size: 14px;
+}
+
+.feedback-type {
+  background: #007bff;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  display: inline-block;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+
+.feedback-message {
+  margin-bottom: 10px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.feedback-suggestions {
+  margin-bottom: 10px;
+  font-style: italic;
+  color: #555;
+}
+
+.feedback-status {
+  font-weight: 500;
+}
+
+.status {
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.status.pending {
+  background: #ffc107;
+  color: #000;
+}
+
+.status.reviewed {
+  background: #17a2b8;
+  color: white;
+}
+
+.status.resolved {
+  background: #28a745;
+  color: white;
+}
+
+.status.rejected {
+  background: #dc3545;
+  color: white;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .customer-dashboard {
+    padding: 10px;
+  }
+  
+  .feedback-form-section,
+  .feedback-history-section {
+    padding: 20px;
+  }
+  
+  .feedback-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+}
