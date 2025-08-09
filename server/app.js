@@ -15,7 +15,9 @@ app.use('/api/auth', authRoutes);
 
 app.use('/api/manager', managerRoutes);
 app.use('/api/customer', customerRoutes); // Add this line
-
+app.get('/api', (req, res) => {
+  res.json({ message: 'API is working!' });
+});
 // Connect to MongoDB
 mongoose.connect(process.env.MONGO_URI, {
   useNewUrlParser: true,
