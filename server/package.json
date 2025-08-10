@@ -20,5 +20,5 @@
     "mongoose": "^8.16.5",
     "nodemon": "^3.1.10"
   },
-  "proxy": "https://customerservicefeedback.onrender.com"
+  "proxy": "http://localhost:5000"
 }
