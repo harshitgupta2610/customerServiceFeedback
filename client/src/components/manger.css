@@ -88,6 +88,7 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 12px;
+  color: black;
 }
 
 .rating {
@@ -101,7 +102,7 @@
 
 .suggestions {
   margin: 0 0 8px;
-  color: #555;
+  color: rgb(93, 79, 79);
 }
 
 footer {
