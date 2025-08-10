@@ -631,8 +631,29 @@ body {
   }
   
   .nav-container {
-    width: 100%;
-  }
+  width: 100%;
+  display: flex; /* Make sure it's flexbox */
+}
+
+.nav-tab {
+  flex: 1; /* This makes each tab take equal space */
+  padding: 15px 30px;
+  color: var(--text-secondary);
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: var(--radius-medium);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the content */
+  gap: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+
+
   
   .nav-tab {
     padding: 12px 20px;
